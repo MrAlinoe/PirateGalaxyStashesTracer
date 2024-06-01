@@ -9,6 +9,9 @@
 			/*Existing beacons*/
 			html, body {
 				background-color: gray;
+				background-image: url("app_ress/bg.png");
+				background-size: cover;
+				background-position: center;
 				height: -webkit-fill-available;
 				margin: 0;
 				display: flex;
@@ -369,10 +372,10 @@
 					<div id="val_2" class="obj_value_container prevent-select" onclick="userSwitchField(2)">
 						
 					</div>
-					<div onclick="userInput('-3')" class="obj_value_button prevent-select">
+					<div onclick="userInput('-3')" class="obj_value_button prevent-select" style="background-size: 70%; background-repeat: no-repeat; background-image: url('app_ress/cancel.png'); background-position-x: 200%; background-position-y: 50%;">
 						Cancel
 					</div>
-					<div onclick="userInput('-4')" class="obj_value_button prevent-select">
+					<div onclick="userInput('-4')" class="obj_value_button prevent-select" style="background-repeat: no-repeat; background-image: url('app_ress/btn_change.png'); background-position-x: -20%; background-position-y: -10px;">
 						Settings
 					</div>
 					<div class="obj_value_button prevent-select">
@@ -455,6 +458,8 @@
 			</div>
 			<div id="overlay_welcome" class="sub_overlay" style="overflow:hidden; background-color: black; visibility: visible;" onclick="appDrawn(); userSwitchOverlay(1,0);">
 				<img style="opacity: 0.5; animation: rotation 360s infinite linear;" width="120%" src="app_ress/pgst_logo.png"/>
+				<img width="90%" src="app_ress/pg_logo.webp"/>
+				<span style="font-family: Arial Black; color: black;">Click to continue</span>
 			</div>
 		</div>
 		<!-- Keep this DIV close, it store base64 ressources, Notepad don't like to display that-->
@@ -537,6 +542,7 @@ canvas.addEventListener("click", function (evt) {
 		app.temp[0] = x.toString(); 
 		app.temp[1] = y.toString();
 		userSwitchField(2);
+		appDrawn();
 	}
 }, false);
 
@@ -771,6 +777,19 @@ function appDrawn() {
 		ctx.arc(((550/100) * app.result[app.probe][i][0]), ((550/100) * app.result[app.probe][i][1]), 5, 0, 2 * Math.PI);
 		ctx.fillStyle = app.color[app.map];
 		ctx.fill();
+	}
+	if (app.temp[0] != "" && app.temp[1] != "")
+	{
+		let x = parseInt(app.temp[0]) * (550/100);
+		let y = parseInt(app.temp[1]) * (550/100);
+		ctx.strokeStyle = "black";
+		ctx.beginPath();
+		ctx.lineWidth = 1;
+		ctx.moveTo(x, 0);
+		ctx.lineTo(x, 550);
+		ctx.moveTo(0, y);
+		ctx.lineTo(550, y);
+		ctx.stroke();
 	}
 }
 function appUdpateGui() {
