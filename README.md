@@ -1,5 +1,5 @@
 # PirateGalaxy StashesTracer
-[Open Application](https://mralinoe.github.io/pgstWeb/)
+[Ouvrir l'application Web](https://mralinoe.github.io/pgstWeb/)
 
 Cet outil a été conçu dans le but de faciliter la chasse aux trésors de Noël dans le jeu [Pirate Galaxy]([https://pages.github.com/](https://pirategalaxy.com)), il est inutile si vous n'y jouez pas...
 ### Comment ça marche?
