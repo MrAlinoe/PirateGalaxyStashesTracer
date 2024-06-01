@@ -1,0 +1,55 @@
+[en] By executing/decompress/using this application you comply with the following terms of use
+[fr] En executant/décompressant/utilisant cette application vous acceptez les conditions d'utilisation suivantes
+
+===================================================================================================EN - English
+Terms and conditions of the software - PGST by alinoethebunny - Copyright 2024
+
+You need to agree to the following terms before using the software, if not, close the software and go touch some grass
+alinoethebunny has the right to modify at any moment this document without notice
+
+alinoethebunny is the owner of the software and the only one that can modify/distribute the software or the licence
+
+Some images are the proprety of SplitScreen Studios
+
+[LITE Downloadable version only]
+This software use PyWebView(https://github.com/r0x0r/pywebview)
+Under licence BSD 3-Clause License(https://github.com/r0x0r/pywebview?tab=BSD-3-Clause-1-ov-file)
+
+Conditions of the software itself
+ - You don't have the right to distribute this software or any part of the software, or share it with a redirection link (monetized or not),
+	- Except almost all images because not the proprety of alinoethebunny, however the logo is,
+ - You don't have the right to modify the software,
+ - alinoethebunny is not responsible for any potential damage to your machine or your account,
+
+alinoethebunny is not affiliated to SplitScreenStudios or any entity linked to Pirate Galaxy
+
+
+===================================================================================================FR - Français
+Termes et conditions du programme - PGST by alinoethebunny - Copyright 2024
+
+En utilisant ce programme vous acceptez les termes des conditions d'utilisation
+alinoethebunny se réserve le droit de modifier à tout moment les termes de ce contrat sans préavis
+
+alinoethebunny est le propriétaire du projet et le seul a avoir le droit de modifier/distribuer le programme ou sa licence
+
+Certaines images utilisées dans le projet appartiennent à SplitScreen Studios
+
+[Version téléchargeable lite uniquement]
+Ce programme a recours à la librairie pywebview(https://github.com/r0x0r/pywebview)
+Ce système permet un fonctionnement similaire à Electron en passant par une fonctionnalité du navigateur Edge installé sur le système
+Cela permet d'éviter une application de 200mo, l'un des gros soucis d'Electron
+Cette dernière est sous licence BSD 3-Clause License(https://github.com/r0x0r/pywebview?tab=BSD-3-Clause-1-ov-file)
+
+Conditions spécifiques au programme
+ - Vous acceptez de ne pas avoir le droit de distribuer le programme ou une modification de ce dernier,
+	- La majorité des images sont exclus de cette règles car elles n'appartiennent pas à alinoethebunny, 
+	- Vous avez le droit de distribuer les liens de téléchargement fournis par l'auteur,
+	- Il vous est interdit de passer par des liens de redirection menant au vrai lien, qu'ils soient monétisés ou non,
+		-> Les services comme Addfly sont une catastrophe en termes de virus
+ - Vous acceptez de ne pas avoir le droit de modifier ce programme,
+ - Vous reconnaissez que alinoethebunny n'est pas responsable de tout potentiel dommage subi par vos appareils ou vos comptes,
+	- A cette date (9/05/2024) cette application est en accord avec le règlement du jeu(https://forum.pirategalaxy.com/threads/code-of-conduct-ingame-28-04-2021.28986/)
+	- L'application n'interragit à aucun moment avec le jeu,
+
+alinoethebunny n'est pas affilié à SplitScreen Studios ou autre entitée liée à PirateGalaxy
+Ce service est proposé par un tier
