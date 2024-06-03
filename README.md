@@ -1,5 +1,5 @@
 # PirateGalaxy StashesTracer
-[Ouvrir l'application Web](https://mralinoe.github.io/pgstWeb/)
+[Ouvrir l'application Web](https://mralinoe.github.io/PirateGalaxyStashesTracer/)
 
 Cet outil a été conçu dans le but de faciliter la chasse aux trésors de Noël dans le jeu [Pirate Galaxy]([https://pages.github.com/](https://pirategalaxy.com)), il est inutile si vous n'y jouez pas...
 ### Comment ça marche?
@@ -18,6 +18,10 @@ Cet outil a été conçu dans le but de faciliter la chasse aux trésors de Noë
 ### Notes:
 *Des outils similaires existent utilisant la trilatération ou encore cette même méthode à savoir les cercles, le but ici est de fournir une interface web compatible pour les navigateurs mobiles.*
 Les ressources comme la cartes ansi que certaines images venant du jeu ont été récupérées ici: https://www.c3709203.myzen.co.uk/PG/
-Ce site propose d'ailleur un outil pour les caches par trilatération... 
+Ce site propose d'ailleur un outil pour les caches par trilatération...
+
+### Licence:
+Cette application est surtout sur Github parce que Github Pages permet de rendre l'application accessible sans frais
+La licence est disponible dans les fichiers
 
 *A cette date 01/06/2024, l'application respecte les règles du jeu, ce programme n'a aucune interaction avec le jeu en lui-même...*
