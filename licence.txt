@@ -19,6 +19,7 @@ Conditions of the software itself
  - You don't have the right to distribute this software or any part of the software, or share it with a redirection link (monetized or not),
 	- Except almost all images because not the proprety of alinoethebunny, however the logo is,
  - You don't have the right to modify the software,
+	- Modifications for personnal usage are allowed, however you can't distribute it,
  - alinoethebunny is not responsible for any potential damage to your machine or your account,
 
 alinoethebunny is not affiliated to SplitScreenStudios or any entity linked to Pirate Galaxy
@@ -47,6 +48,7 @@ Conditions spécifiques au programme
 	- Il vous est interdit de passer par des liens de redirection menant au vrai lien, qu'ils soient monétisés ou non,
 		-> Les services comme Addfly sont une catastrophe en termes de virus
  - Vous acceptez de ne pas avoir le droit de modifier ce programme,
+	- Les modifications destinné à usage personnel sont acceptés, cependant vous n'avez pas le droit de les distribuer,
  - Vous reconnaissez que alinoethebunny n'est pas responsable de tout potentiel dommage subi par vos appareils ou vos comptes,
 	- A cette date (9/05/2024) cette application est en accord avec le règlement du jeu(https://forum.pirategalaxy.com/threads/code-of-conduct-ingame-28-04-2021.28986/)
 	- L'application n'interragit à aucun moment avec le jeu,
