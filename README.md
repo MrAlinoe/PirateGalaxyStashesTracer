@@ -25,5 +25,6 @@ Cette application est surtout sur Github parce que Github Pages permet de rendre
 La licence est disponible dans les fichiers
 
 Notez que les images ne son pas de moi à l'exception du logo, vous pouvez donc les récupérer, c'est pas mon problème.
+Ces dernières appartiennent pour la plupart à SplitScreens Games.
 
 *A cette date 01/06/2024, l'application respecte les règles du jeu, ce programme n'a aucune interaction avec le jeu en lui-même...*
