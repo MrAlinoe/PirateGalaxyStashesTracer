@@ -61,7 +61,7 @@
 				display: flex;
 				flex-direction: row;
 				background-color: #0d0d0d;
-				background-image: url("app_ress/aurora_bg1.png");
+				background-image: url("app_ress/wbg.png");
 				background-size: cover;
 				background-position: center;
 			}
@@ -101,6 +101,18 @@
 				display: flex;
 				flex-direction: column;
 				background-color: rgba(13,13,13,0.85);
+			}
+			.comp_droneSubButton {
+				height: 100%;
+				width: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				background-color: #0d0d0d;
+			}
+			.comp_droneSubButton:hover {
+				filter: brightness(2);
 			}
 			.obj_panel span {
 				width: 100%;
@@ -279,13 +291,16 @@
 				border-width: 1px;
 				width: 15%; aspect-ratio: 1 / 1;
 			}
+			#overlay_ads {
+				background-color: red;
+			}
 			#overlay_welcome {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
 				cursor: pointer;
-				background-image: url("app_ress/aurora_bg1.png");
+				background-image: url("app_ress/wbg.png");
 				background-size: cover;
 				background-position: center;
 			}
@@ -379,12 +394,13 @@
 						Settings
 					</div>
 					<div class="obj_value_button prevent-select">
-						
+						<span class="comp_droneSubButton" title="Previous Probe" onclick="userRollProbe(-1)"><img width="60%" src="app_ress/probe_left.png" class="prevent-select"/></span>
+						<span class="comp_droneSubButton" title="Next Probe" onclick="userRollProbe(1)"><img width="60%" src="app_ress/probe_right.png" class="prevent-select"/></span>
 					</div>
 				</div>
 			</div>
 			<div class="sub_credit prevent-select">
-				by alinoethebunny - v0.3
+				by alinoethebunny - v0.4
 			</div>
 			<div id="overlay_settings" class="sub_overlay" style="visibility: hidden;">
 				<div onclick="userSwitchOverlay(0,0);" class="obj_overlay_close prevent-select">X</div>
@@ -456,10 +472,16 @@
 					<br/>
 				</div>
 			</div>
+			<div id="overlay_ads" class="sub_overlay" style="overflow:hidden; visibility: hidden;">
+				
+			</div>
 			<div id="overlay_welcome" class="sub_overlay" style="overflow:hidden; background-color: black; visibility: visible;" onclick="appDrawn(); userSwitchOverlay(1,0);">
-				<img style="opacity: 0.5; animation: rotation 360s infinite linear;" width="120%" src="app_ress/pgst_logo.png"/>
+				<!-- <img style="opacity: 0.5; animation: rotation 360s infinite linear;" width="120%" src="app_ress/pgst_logo.png"/> -->
 				<img width="90%" src="app_ress/pg_logo.webp"/>
-				<span style="font-family: Arial Black; color: black;">Click to continue</span>
+				<span style="font-family: Impact; font-size: 32px; color: lightgray; margin-top: -20px;">Stashes Tracer</span>
+				<span style="font-family: Arial Black; color: white; margin-top: 30px;">Click to continue</span>
+				<img style="position: absolute; bottom: 30px;" width="15%" src="app_ress/bunbun.png"/>
+				<span style="font-size: 14px; font-family: Courier New; color: white; margin-top: 8px; position: absolute; bottom: 10px;">alinoethebunny</span>
 			</div>
 		</div>
 		<!-- Keep this DIV close, it store base64 ressources, Notepad don't like to display that-->
@@ -658,6 +680,20 @@ function userSwitchProbe(probe) {
 	appDrawn();
 	appUdpateGui();
 }
+function userRollProbe(val) {
+	let temp = app.probe + val;
+	if (temp < 0)
+	{
+		temp = 5;
+	}
+	if (temp > 5)
+	{
+		temp = 0;
+	}
+	app.probe = temp;
+	appDrawn();
+	appUdpateGui();
+}
 function userSwitchPlanet(planet) {
 	app.map = planet;
 	appDrawn();
@@ -783,7 +819,7 @@ function appDrawn() {
 	{
 		let x = parseInt(app.temp[0]) * (550/100);
 		let y = parseInt(app.temp[1]) * (550/100);
-		ctx.strokeStyle = "black";
+		ctx.strokeStyle = app.color[app.map];
 		ctx.beginPath();
 		ctx.lineWidth = 1;
 		ctx.moveTo(x, 0);
