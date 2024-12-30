@@ -429,6 +429,8 @@
 					<div class="obj_settings_probe_container">
 						<div id="planet_0" onclick="userSwitchPlanet(0);" class="obj_settings_planet" title="Kalabesh" style="background-image: url('app_ress/Kalabesh_s.png');"></div>
 						<div id="planet_1" onclick="userSwitchPlanet(1);" class="obj_settings_planet" title="Aurora" style="background-image: url('app_ress/Aurora_s.png')"></div>
+						<div id="planet_2" onclick="userSwitchPlanet(2);" class="obj_settings_planet" title="Technatoria" style="background-image: url('app_ress/Aurora_s.png')"></div>
+						<div id="planet_3" onclick="userSwitchPlanet(3);" class="obj_settings_planet" title="Molikar" style="background-image: url('app_ress/Aurora_s.png')"></div>
 					</div>
 					<br/>
 					<span class="prevent-select" style="font-family: Courier New; font-size: 20pt;">Infos and TOS</span>
@@ -488,6 +490,8 @@
 		<div class="box_hide">
 			<img id="ress_aurora" src="app_ress/2aurora.png"/>
 			<img id="ress_kalabesh" src="app_ress/kalabesh.png"/>
+			<img id="ress_technatoria" src="app_ress/technatoria.png"/>
+			<img id="ress_molikar" src="app_ress/molikar.png"/>
 		</div>
     </body>
 <script>
@@ -513,7 +517,9 @@ let app = {
 	field:0,
 	color:[
 		"cyan",
-		"red"
+		"red",
+		"yellow",
+		"yellow"
 	],
 	ress:[],
 	input_id:[
@@ -550,6 +556,8 @@ let app = {
 }
 app.ress[0] = document.getElementById('ress_kalabesh');
 app.ress[1] = document.getElementById('ress_aurora');
+app.ress[2] = document.getElementById('ress_technatoria');
+app.ress[3] = document.getElementById('ress_molikar');
 
 window.addEventListener('pywebviewready', function() {
     document.getElementById("close_window").style.visibility = "visible";
