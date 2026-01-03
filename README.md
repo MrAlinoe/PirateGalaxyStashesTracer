@@ -32,4 +32,9 @@ La licence est disponible dans les fichiers
 Notez que les images ne son pas de moi à l'exception du logo, vous pouvez donc les récupérer, c'est pas mon problème.
 Ces dernières appartiennent pour la plupart à SplitScreens Games, veuillez noter que des droits d'auteurs peuvent s'appliquer.
 
+### Notes relatives au dévelopement:
+A l'origine, la page web devait etre une page unique embarquant HTML/CSS/JS ainsi que les images (en les embarquand en base64 dans le fichier HTML) dans un fichier unique pouvant etre téléchargé sur n'importe quel appareil ou etre intégré à une application externe permettant d'introduire les données sans quitter la fenètre du jeu... Le soucis est que Notepad++, utilisé pour écrire le code, subissait d'énormes pertes de performances quand les ressources étaient intégrées au fichier rendant tout dévelopement horrible et que l'application avait une compatibilité inconsistante...
+
+Voila, vous savez désormais pourquoi le code est aussi chaotique et devrait être ré-écrit.
+
 *A cette date 01/06/2024, l'application respecte les règles du jeu, ce programme n'a aucune interaction avec le jeu en lui-même...*
